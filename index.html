@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+  <title>Home</title>
+  <!-- link bootstrap css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- //link stylesheet  -->
+  <link rel="stylesheet" href="./utils/css/style.css">
+</head>
+
+<body>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- -------------------------------------------------------------------------------------------------------------- -->
+  <!-- navigation bar & alert box goes here -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark " id="nav-bar">
+    <a class="navbar-brand" href="#">AgroTalks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Content
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"> <img src="./utils/icons/tut-icon.png" alt="icon" class="icon"> Crops
+              tutorials </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><img src="./utils/icons/des-icon.png" alt="icon" class="icon"> Crops
+              deceases </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <img src="./utils/icons/chem-icon.png" alt="icon" class="icon">Chemicals
+              & Uses</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <img src="./utils/icons/org-icon.png" alt="icon" class="icon">Organic
+              Farming </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <img src="./utils/icons/weather-icon.png" alt="icon" class="icon">Weather
+              and Crops Planning </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <img src="./utils/icons/marketing-icon.png" alt="icon"
+                class="icon">Marketing factors </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><img src="./utils/icons/more-2.png" alt="icon" class="icon"> And more <i
+                class="fa fa-arrow-right content-icon" style="margin-left: 70px;"></i></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Services</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+  <!-- Banner which is connected with a login anf sign up form -->
+  <header id="background">
+    <div class="row main">
+      <div class="banner  col-md-4 col-sm-8 col-lg-4">
+        <h1>Farmer? & Have a problem? </h1>
+        <h5>Find solutions with AgroTalks</h5>
+        <hr>
+        <p>Want to Explore?</p>
+        <button class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#login-modal">Login</button>
+        <hr>
+        <p>don't have an account? </p>
+        <button class="btn btn-outline-warning my-2 my-sm-0" data-toggle="modal" data-target="#signup-modal">Sign
+          up</button>
+      </div>
+      <!-- Login Block which will be hidden -->
+
+      <!-- Sign up which will be hidden -->
+      <div class="signup col-md-4 col-sm-8 col-lg-4">
+
+      </div>
+    </div>
+  </header>
+  <!-- Pop up login form -->
+  <!-- code reference : bootstrap cdn & w3schools -->
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label"> Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-2">Are you sure?</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Yes
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- pop up sign up form -->
+  <!-- code reference : bootstrap cdn and w3schools -->
+  <div class="modal fade" id="signup-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">User name : </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter Username">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">First name : </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter first name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Last name :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter last name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Date of birth :</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="inputEmail3" placeholder="Enter DOB">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Landmark of your farm :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter valid address">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label"> Area of farm : </label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="inputEmail3" placeholder="eg. 100 sq. meter">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Mobile number :</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="inputEmail3" placeholder="Enter mobile number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label"> Password :</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm password :</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder=" Renter password">
+
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-2"> <a href="#"> Read T&C and privacy policy</a></div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    I agree & Confirm
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+  <!-- creating a about section -->
+  <section class="container " id="about">
+
+    <div class="row content col-lg-12 ">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 " id="head-box">
+
+        <h3>
+          "Alone we can do so little, <br> together we can do so much"
+        </h3>
+      </div>
+
+      <div id="about-text" class=" col-12 col-sm-12 col-md-12 col-lg-8 ">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora quod, dolores voluptatum
+          quidem obcaecati consequuntur voluptatem reiciendis voluptatibus quo corporis cum voluptate sapiente ex,
+          at voluptates fugit modi porro iure quam. Eius voluptatem fuga eaque suscipit dolorem ullam excepturi. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Nam praesentium veniam quibusdam aut quas explicabo
+          voluptates perferendis ea maxime? Iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi,
+          voluptatibus sint aspernatur architecto magni, eligendi qui impedit reprehenderit provident hic, non numquam
+          inventore alias esse iusto molestiae ipsam accusantium.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 col-md-12 col-lg-9 " id="cor">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./utils/media/img/cor-1.jpg" alt="img-1" width="1100" height="500">
+            <div class="carousel-caption  d-md-block caption">
+              <h5>Be a part of AgroTalks</h5>
+              <p> and help us Making Farmers cumminuty</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./utils/media/img/cor-2.jpg" alt="img-2" width="1100" height="500">
+            <div class="carousel-caption  d-md-block caption">
+              <h5>Share & find Solutions</h5>
+              <p>share your doubts with others and find a perfect solution</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./utils/media/img/cor-3.jpg" alt="img-3" width="1100" height="500">
+            <div class="carousel-caption  d-md-block caption ">
+              <h5>Free access to AgroTalks Services</h5>
+              <p>See all content free</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+  <!-- Creating a services section -->
+  <section class="container services">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-10 services-head ">
+      <h4>
+        Why to connect with us?
+      </h4>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-10 services-discription">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service ">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-6"><img src="./utils/media/img/helping-img.jpg" alt="service-1"
+            style=" margin: 5px auto;
+              border-radius: 10px;
+              width: 95%;
+              height: auto;"></div>
+        <div class="col-12 col-sm-12 col-md-10 col-lg-6 service-data">
+          <h4>A intial for helping farmers to meet their goals. </h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-secondary" role="button" style="margin-left: 35%;">Join us</a>
+          <a href="#" class="btn btn-outline-info" role="button" style="float: right;">Learn more</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/media/img/crowd-img.png"
+            alt="service-5"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4> Post your opinions and help each other to solve problems.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service ">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/media/img/question-img.png"
+            alt="service-5"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>Get help from our crop experts and inhance the productivity.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/icons/tut-icon.png"
+            alt="service-2"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4> Follow our crop tutorials and learn all aspects. </h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service ">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/icons/des-icon.png"
+            alt="service-3"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>Learn about all crop deceases. </h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/icons/chem-icon.png"
+            alt="service-4"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>Learn about chemicals and apply the same to your crops</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service ">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/icons/weather-icon.png"
+            alt="service-5"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>Access our weather services & make your plans with us.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/icons/marketing-icon.png"
+            alt="service-5"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>Learn about different marketing factors & make your own policies.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 service ">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-img"><img src="./utils/media/img/analysis-img.png"
+            alt="service-5"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 service-data">
+          <h4>do analysis of government policies with our experts, and get notified. </h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam autem debitis, rem eum dolor facilis
+            aperiam quaerat inventore pariatur asperiores.</p>
+          <a href="#" class="btn btn-info start-link" role="button">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials section  code reference : codepen -->
+  <div class="container" id="testimos">
+    <div id="testim-head" >
+      <h3>What our clients says about us?</h3>
+    </div>
+  <section id="testim" class="container testim">
+            <div class="testim-cover">
+    <div class="wrap">
+
+      <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+      <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+      <ul id="testim-dots" class="dots">
+        <li class="dot active"></li>
+        <!--
+                        -->
+        <li class="dot"></li>
+        <!--
+                        -->
+        <li class="dot"></li>
+        <!--
+                        -->
+        <li class="dot"></li>
+        <!--
+                        -->
+        <li class="dot"></li>
+      </ul>
+      <div id="testim-content" class="cont">
+
+        <div class="active">
+          <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+          <h2>Lorem P. Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div>
+          <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+          <h2>Mr. Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div>
+          <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div>
+          <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+          <h2>Lorem De Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div>
+          <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
+          <h2>Ms. Lorem R. Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+      </div>
+
+    </div>
+            </div>
+  </section>
+  </div>
+
+
+<div class=" container sign-up-reason">
+  <div class="part-1 col-12 col-sm-12 col-md-10 col-lg-7">
+    <h4>
+      Why to sign up?
+    </h4>
+     <p>
+       Feel free to sign up. <b>it's completelly free </b>
+       Signing up help  us to personalize your experience. You can set your own profile. You can join our AgroPosts section 
+       where different farmers come together help each other. And many more benifits. 
+     </p>
+       <a href="" class="btn btn-dark" role="button">Sign up</a>
+  </div>
+  <div class="part-2 col-12 col-sm-12 col-md-10 col-lg-5">
+          <h5> <i class="fas fa-caret-square-down"></i> You may also like to</h5>
+          <ul>
+            <li> <a href="">Invite your friends to join.</a></li>
+            <li> <a href="">Be a auther at AgroTalks.</a></li>
+            <li> <a href="">Take a job at AgroTalks.</a></li>
+            <li> <a href="">See government's  latest agriculture policies.</a></li>
+            <li> <a href="">Maintain your agriculture data with AgroTalks</a></li>
+            <li> <a href="">learn about foreign agricultural technologies</a></li>
+          </ul>        
+  </div>
+</div>
+
+<div class="comment-us container col-12 col-sm-11 col-md-10 col-lg-6">
+  <form action="">
+   
+    <div class="form-group post-here" >
+      <label for="comment-text"> <i class="fas fa-comments"></i> Leave a Comment here </label>
+      <textarea class="form-control" id="comment-text" placeholder="what you want to say? type here & post." rows="7"></textarea>
+      <button class="btn btn-primary" type="submit">Post</button>
+    </div>
+  </form>
+</div>
+
+<footer class="footer-class container-fluid">
+
+  <div class="more-info">
+    <div class="accounts footer-part">
+      <h5>Accounts</h5>
+      <a href="">Login</a> <a href="">Sign up</a>
+    </div>
+    <div class="company footer-part">
+      <h5>Company</h5>
+      <a href="">About us</a>
+      <a href="">Careers</a>
+      <a href="">Contact us</a>
+    </div>
+   
+<div class="support footer-part">
+  <h5>Support</h5>
+  <p>  <i class="fas fa-phone-alt"></i> +91-9511548390</p>
+  <p> <i class="far fa-envelope"></i> khotd.ug19.cs@nitp.ac.in</p>
+</div>
+
+<div class="follow footer-part">
+    <h5>follow us </h5> <a href=""><i class="fab fa-facebook"></i></a> <a href=""><i class="fab fa-linkedin"></i></a> <a href=""><i class="fab fa-twitter"></i></a> <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+ <div class="copyright">
+   <a href="">terms and conditions</a>
+   <a href="">privacy policy</a>
+   <p>	&copy;2021 AgroTalks. All rights reserved.</p>
+ </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+  <a href="#" class="btn btn-dark float" role="button"><i class="bi bi-caret-up"></i>Go up</a>
+
+  <!-- ----------------------------------------------------------------------------------------------------------------- -->
+  <!-- add bootstrap here -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="./utils/js/app.js"></script>
+</body>
+
+</html>
